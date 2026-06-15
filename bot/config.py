@@ -22,8 +22,8 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "8730393744"))  # Placeholder owner ID
 PORT = os.environ.get("PORT", "5000")
 # Database
 DB_URI = os.environ.get(
-    "DATABASE_URL",
-    "mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0",  # Placeholder DB URI
+    "MONGO_URI",
+    os.environ.get("DATABASE_URL", "mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0"),  # Placeholder DB URI
 )
 DB_NAME = os.environ.get("DATABASE_NAME", "Anujedit")
 
